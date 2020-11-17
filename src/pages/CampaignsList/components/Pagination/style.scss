@@ -1,0 +1,30 @@
+$color-blue: #03a9f4;
+
+.pagination {
+
+  > ul {
+    list-style: none;
+    display: flex;
+    
+    > li {
+      padding: 10px;
+      border: 1px solid grey;
+      cursor: pointer;
+
+      &:first-of-type {
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+
+      &:last-of-type {
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+    }
+
+    .active {
+      background-color: $color-blue;
+      color:white;
+    }
+  }
+}

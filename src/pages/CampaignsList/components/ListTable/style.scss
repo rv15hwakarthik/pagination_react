@@ -1,0 +1,25 @@
+$color-red: #ee2a29; // should technically be imported from _variables.scss
+
+.list-table {
+
+  > table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+      border-bottom: solid 1px $color-red;
+      padding: 10px;
+    }
+
+    tr {
+
+      &:nth-of-type(odd) {
+        background-color: lightgray;
+      }
+
+      td{
+        padding: 10px;
+      }
+    }
+  }
+}
